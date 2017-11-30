@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tshibakela.tshibakela.MainActivity">
+<linearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shout Left Right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#09667"
+        android:textAllcaps="Wrap_content"
+        />
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centercrop"
+        android:src="@drawable/beach"
+    />
+
+    <Buttom
+        android:id="@+id/Go!!"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="True/False"
+        android:textcolor="#9999003b"
+        android:layout_aliginParentTop="true"
+        android:layout_aliginParent="match_parent"
+        />
+    <SearchView
+        android:id="@+id/Search View"
+        android:queryHint="@string/search_photos"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:iconifiedBydefault="false"
+        android:layout_alignParentTop="true"
+        android:layout_leftHorizontal="true"
+        />
+    <MessageView
+        android:id="@+id/Msg Receive"
+        android:tex="@string/Msg Receve"
+        android:layout_leftHorizontal="true"
+        android:layout_height="match_parent"
+        android:texcolor="YellowRed"
+        android:message="20"
+        \>
+
+    <EmailSignIn
+        android:id="@+id/SignIn"
+        style="?android:attr/EmailSiqnIn"
+        android:text="@string/SignIn Email"
+        android:layout_height="wrap_content"
+        \>
+
+/>
+
+
+
+</android.support.constraint.ConstraintLayout>
